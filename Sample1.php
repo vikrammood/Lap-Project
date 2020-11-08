@@ -5,7 +5,7 @@ extract($_POST);
 if(isset($save))
 {
 $dob=$yy."-".$mm."--".$dd;
-$query="INSERT INTO studentdetails VALUES (4,'$n','$r','$b','$e','$g','$p','$dob',now())";
+$query="INSERT INTO studentdetails VALUES (4,'$n','$r','$b','$g','$e','$p','$dob',now())";
 
 if ($conn->query($query) === TRUE) {
   $msg= "<font color='blue'>Your data saved</font>";
@@ -49,15 +49,15 @@ input[type=submit],input[type=reset]{width:100px}
     <td><textarea name="b"></textarea></td>
   </tr>
   <tr>
-    <td>Enter your Email</td>
-    <td><input type="email" name="e"/></td>
-  </tr>
-  <tr>
     <td height="23">Select your Gender</td>
     <td>
 	Male<input type="radio" name="g" value="m"/>
 	Female<input type="radio" name="g" value="f"/>
 	</td>
+  </tr>	
+  <tr>
+    <td>Enter your Email</td>
+    <td><input type="email" name="e"/></td>
   </tr>
   <tr>
     <td>Enter your Password</td>
