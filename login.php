@@ -38,8 +38,13 @@ hr {
   margin-bottom: 25px;
 }
 
+.registerbtn{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
 /* Set a style for the submit button */
-.registerbtn {
+.loginbtn {
   background-color: #4CAF50;
   color: white;
   padding: 16px 20px;
@@ -50,14 +55,13 @@ hr {
   opacity: 0.9;
 }
 
-.registerbtn:hover {
+.login:hover {
   opacity: 1;
 }
 
+
+
 /* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signup {
@@ -81,11 +85,11 @@ a {
 
     <hr>
 
-    <input type="submit" class="registerbtn" name="save" value="Submit"/>
+    <input type="submit" class="loginbtn" name="save" value="Submit"/>
   </div>
   
   <div class="container signup">
-    <p>Don't have an account? <a href="http://localhost/register.php">Sign Up</a>.</p>
+    <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='registration-form.php'">Sign Up</button>.</p>
   </div>
 </form>
 
