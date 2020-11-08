@@ -70,8 +70,7 @@ a {
 
 <form method="post" enctype="multipart/form-data" action="sample.php" target="_blank">
   <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to register for exams.</p>
+    <h1>Login</h1>
     <hr>
 	<label for="name"><b>Name</b></label>  
     <label for="email"><b>Email</b></label>
