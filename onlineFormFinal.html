@@ -17,19 +17,23 @@ input[type=submit],input[type=reset]{width:100px}
  <tr>
  	<td colspan="2"><?php echo @$msg; ?></td>
  </tr>	
+ <!taking yourname as input and defined as n>	
   <tr>
     <td width="159">Enter your Name</td>
     <td width="218">
 	<input type="text" placeholder="your first name"  name="n" pattern="[a-z A-Z]*" required /></td>
   </tr>
+  <!taking roll no as input and defined as r>
   <tr>
     <td>Enter your Roll no.</td>
     <td><textarea name="r"></textarea></td>
   </tr>
+ <!taking your branch name as input and defined as b>	
   <tr>
     <td>Enter your Branch</td>
     <td><textarea name="b"></textarea></td>
   </tr>
+ <!select gender(male/female) by making a defined as g>	
   <tr>
     <td height="23">Select your Gender</td>
     <td>
@@ -37,19 +41,22 @@ input[type=submit],input[type=reset]{width:100px}
 	Female<input type="radio" name="g" value="f"/>
 	</td>
   </tr>	
+  <!taking your mail id as input and it defined as e>
   <tr>
     <td>Enter your Email</td>
     <td><input type="email" name="e"/></td>
   </tr>
- 
+  <!taking your mail password as input and it defined as p>
   <tr>
     <td>Enter your Password</td>
     <td><input type="password" name="p"/></td>
   </tr>
+  <!taking date of birth and created month,dates,years options>	
   <tr>
     <td>Select your DOB</td>
     <td>
-		<select name="mm">
+	        <!month option>
+	        <select name="mm">
 			<option value="">Month</option>
 			<?php 
 			for($i=1;$i<=12;$i++)
@@ -58,6 +65,7 @@ input[type=submit],input[type=reset]{width:100px}
 			}
 			?>
 		</select>
+	        <!dates option>
 		<select name="dd">
 			<option value="">Date</option>
 			<?php 
@@ -67,6 +75,7 @@ input[type=submit],input[type=reset]{width:100px}
 			}
 			?>
 		</select>
+	        <!years option>
 		<select name="yy">
 			<option value="">Year</option>
 			<?php 
@@ -78,6 +87,7 @@ input[type=submit],input[type=reset]{width:100px}
 		</select>
 	</td>
   </tr>
+  <!colspan :  specify the number ofcolumns a cell should span.>	
   <tr>
     <td colspan="2" align="center">
 	<input type="submit" name="save" value="Register Me"/>
