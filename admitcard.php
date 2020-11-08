@@ -75,7 +75,7 @@ a {
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
     <input type="submit" name="save" value="Submit"/>
   </div>
-  
+  /* if you have account already so you can get signin directly as with your details */
   <div class="container signin">
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
