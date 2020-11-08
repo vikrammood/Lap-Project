@@ -22,6 +22,7 @@ $conn->close();
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Registration Form</title>
+<!defining style as format>	
 <style>
 input,textarea{width:200px}
 input[type=radio],input[type=checkbox]{width:10px}
@@ -34,7 +35,7 @@ input[type=submit],input[type=reset]{width:100px}
 <table width="393" border="1">
  <tr>
  	<td colspan="2"><?php echo @$msg; ?></td>
- </tr>
+ </tr>	
   <tr>
     <td width="159">Enter your Name</td>
     <td width="218">
@@ -95,6 +96,7 @@ input[type=submit],input[type=reset]{width:100px}
 		</select>
 	</td>
   </tr>
+  <! colspan : it can used to specifiy the number of columns a cell should span>	
   <tr>
     <td colspan="2" align="center">
 	<input type="submit" name="save" value="Register Me"/>
