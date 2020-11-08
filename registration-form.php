@@ -16,7 +16,7 @@ else
 $query="INSERT INTO studentdetails VALUES ($count+1,'$n','$r','$b','$e','$g','$p','$dob',now())";
 
 if ($conn->query($query) === TRUE) {
-$msg = "<font color='blue'>Your data saved</font>";
+  header("Location: login.php");
 } else {
   echo "Error: " . $query . "<br>" . $conn->error;
 }
@@ -130,9 +130,10 @@ label{
 <div style="margin-top: 10px">
   <input type="submit" name="save" class="sbtn" value="Register Me"/>
   <input type="reset" value="Reset"/>
-  <input type="button" value="Login Me" onclick="window.location.href='login.php'" />
 </div>
 </form>
+<br>
+<input type="button" value="Login Me" onclick="window.location.href='login.php'" />
 </div>
 </body>
 </html>
