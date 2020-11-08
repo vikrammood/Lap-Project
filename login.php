@@ -89,7 +89,7 @@ hr {
   </div>
   
   <div class="container signup">
-    <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='registration-form.php'">Register me</button>.</p>
+    <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='registration-form.php'">Sign Up</button>.</p>
   </div>
 </form>
 
