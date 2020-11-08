@@ -15,7 +15,7 @@ body {
   padding: 16px;
   background-color: white;
 }
-/*full_width input fields*/ 
+/*style full width of input fields*/ 
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -48,11 +48,11 @@ hr {
 .registerbtn:hover {
   opacity: 1;
 }
-/*adding a blue text color to the links*/
+/*adding a blue text color to the links . text colors*/
 a {
   color: dodgerblue;
 }
-/*Setting a grey color background color and center the text of the "Sign in" selection. */  
+/*Setting a grey color background color and center the text of the "Sign in" selection. color styles */  
 .signin {
   background-color: #f1f1f1;
   text-align: center;
