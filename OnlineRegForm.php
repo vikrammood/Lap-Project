@@ -19,7 +19,7 @@ $msg="<font color='red'>".ucfirst($e)."already exists choose another email</font
 }
 else
 {
-$query="insert into studentdetails values('','$n','$r','$b','$e','$g','$p','$dob',now())";
+$query="insert into studentdetails values('','$n','$r','$b','$g','$e','$p','$dob',now())";
 mysql_query($query);
 $msg= "<font color='blue'>Your data saved</font>";
 }
