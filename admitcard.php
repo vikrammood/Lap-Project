@@ -66,8 +66,8 @@ a {
     <h1>Register</h1>
     <p>Please fill in this form to register for exams.</p>
     <hr>
-	<label for="name"><b>Name</b></label>  
-    <label for="email"><b>Email</b></label>
+	  <label for="name"><b>Name</b></label>
+    <label for="email"><b>Email</b></label> 
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
@@ -75,7 +75,7 @@ a {
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
     <input type="submit" name="save" value="Submit"/>
   </div>
-  /* if you have account already so you can get signin directly as with your details */
+  <! if you have account already so you can get signin directly as with your details >
   <div class="container signin">
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
