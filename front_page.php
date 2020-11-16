@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+  <?php?>
   <body>
     <form class=""enctype="multipart/form-data" action="register.php" method="post" target="_blank">
         <input type="button" value="Register for student" onclick="window.location.href='register.php'" />
