@@ -1,0 +1,19 @@
+// create a database  
+CREATE DATABASE student
+USE student
+
+// create a table studentdetails   
+CREATE TABLE IF NOT EXISTS studentdetails 
+(
+  id int(11) NOT NULL AUTO_INCREMENT,
+  name char(50) NOT NULL,
+  roll varchar(50) NOT NULL,
+  branch varchar(50) NOT NULL,
+  email varchar(50) NOT NULL,
+  gender enum('m','f') NOT NULL,
+  password varchar(50) NOT NULL,
+  dob date NOT NULL,
+  registrationDate datetime NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY email (email)
+) 
