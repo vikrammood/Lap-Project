@@ -17,4 +17,4 @@ The project involves  “Web application for online application with following f
 Technology: LAMP\
 Requirements: MySQL, HTML, CSS, PHP, js
 
-For more information see [Wiki](https://github.com/vikrammood/Lap-Project) page.
+For more information see [Wiki](https://github.com/vikrammood/Lap-Project/wiki) page.
