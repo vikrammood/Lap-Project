@@ -17,4 +17,8 @@ The project involves  “Web application for online application with following f
 Technology: XAMPP\
 Requirements: MySQL, HTML, CSS, PHP, js
 
-For more information see [Wiki](https://github.com/vikrammood/Lap-Project/wiki) page.
+For more information see [Wiki](https://github.com/vikrammood/Lap-Project/wiki) page.\
+\
+Watch the project video by clicking at the link:
+[Video](https://www.youtube.com/watch?v=cBosgEEA--Y)
+
