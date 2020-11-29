@@ -27,3 +27,6 @@ Watch the project video by clicking at the link:
 
 2.Go to the folder where you have cloned the repository.
 
+3.Open front_page.php in browser.
+
+4.Select Student/Admin/Principal, Register by providing necessary details and login.
