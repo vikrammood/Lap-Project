@@ -1,9 +1,10 @@
 <?php
+//create connection.
 $conn = new mysqli("localhost:3306","root","Keerthi@2001","student");
 extract($_POST);
 if(isset($save))
 {
-$dob=$yy."-".$mm."--".$dd;
+$dob=$yy."-".$mm."--".$dd; 
 $sql = "SELECT * FROM studentdetails";
 $count = $conn->query($sql)->num_rows;
 $sql = "SELECT * FROM studentdetails where email = '$e'";
