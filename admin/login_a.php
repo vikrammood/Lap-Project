@@ -70,9 +70,9 @@ hr {
     <hr>
 	<label for="name"><b>Name</b></label>
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required> <!-- enter email -->
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required> <!-- enter passwod -->
     <hr>
     <input type="submit" class="loginbtn" name="save" value="Submit"/>
   </div>
