@@ -36,5 +36,5 @@ Watch the project video by clicking at the link:
 
 3.Principle:login with registered account and download files uploaded by admin.
 
-For more information see [Wiki](https://github.com/vikrammood/Lap-Project/wiki) page.\
+For more information see [Wiki](https://github.com/vikrammood/Lap-Project/wiki) page.
 
