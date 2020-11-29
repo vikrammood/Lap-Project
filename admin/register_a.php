@@ -4,26 +4,26 @@ extract($_POST); //imports post variables
 if(isset($save)) //it checks whether we clicked the submit button or not.
 {
 $dob=$yy."-".$mm."--".$dd;
-$sql = "SELECT * FROM admindetails";
-$count = $conn->query($sql)->num_rows;
-$sql = "SELECT * FROM admindetails where email = '$e'";
+$sql = "SELECT * FROM admindetails"; //selecting all rows from studentdetails.
+$count = $conn->query($sql)->num_rows; //counts number of rows in student details 
+$sql = "SELECT * FROM admindetails where email = '$e'"; //selecting the row where email = entered email.
 $result = $conn->query($sql);
-if ($result->num_rows > 0) {
+if ($result->num_rows > 0) { //if the entered email already exists.
 $msg = "<font color='red'>".ucfirst($e)."already exists choose another email</font>";
 }
 else
 {
-$query="INSERT INTO admindetails VALUES ($count+1,'$n','$e','$p',now())";
+$query="INSERT INTO admindetails VALUES ($count+1,'$n','$e','$p',now())"; //inserting the details in specified order.
 
 
-if ($conn->query($query) === TRUE) {
-  header("Location: login_a.php");
+if ($conn->query($query) === TRUE) { //if details are inserted succesfully 
+  header("Location: login_a.php"); //redirect to login page.
 } else {
-  echo "Error: " . $query . "<br>" . $conn->error;
+  echo "Error: " . $query . "<br>" . $conn->error; //if not insterted succesfully it shows error
 }
 }
 }
-$conn->close();
+$conn->close(); //close connection.
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -71,28 +71,28 @@ label{
   <tr>
     <th width="150">Enter your Name</th>
     <td width="200">
-	<input type="text" placeholder="your first name" name="n" pattern="[a-z A-Z]*" required /></td>
+	<input type="text" placeholder="your first name" name="n" pattern="[a-z A-Z]*" required /></td> <!-- enter name-->
   </tr>
 
 
   <tr>
     <th>Enter your Email</th>
-    <td><input type="email" id="email" name="e"/></td>
+    <td><input type="email" id="email" name="e"/></td>  <!-- enter email-->
   </tr>
 
   <tr>
     <th>Enter your Password</th>
-    <td><input type="password" name="p"/></td>
+    <td><input type="password" name="p"/></td>  <!-- enter password-->
   </tr>
 
 </table>
 <div style="margin-top: 10px">
-  <input type="submit" name="save" class="sbtn" value="Register Me"/>
-  <input type="reset" value="Reset"/>
+  <input type="submit" name="save" class="sbtn" value="Register Me"/> <!-- submit details -->
+  <input type="reset" value="Reset"/> <!-- reset details -->
 </div>
 </form>
 <br>
-<input type="button" value="Login Me" onclick="window.location.href='login_a.php'" />
+<input type="button" value="Login Me" onclick="window.location.href='login_a.php'" /> <!-- redirects to admin page. -->
 </div>
 </body>
 </html>
