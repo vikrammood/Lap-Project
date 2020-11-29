@@ -87,12 +87,12 @@ label{
 
 </table>
 <div style="margin-top: 10px">
-  <input type="submit" name="save" class="sbtn" value="Register Me"/> 
-  <input type="reset" value="Reset"/>
+  <input type="submit" name="save" class="sbtn" value="Register Me"/> <!-- submit details -->
+  <input type="reset" value="Reset"/> <!-- reset details -->
 </div>
 </form>
 <br>
-<input type="button" value="Login Me" onclick="window.location.href='login_p.php'" />
+<input type="button" value="Login Me" onclick="window.location.href='login_p.php'" /> <!-- redirects to login page. -->
 </div>
 </body>
 </html>
