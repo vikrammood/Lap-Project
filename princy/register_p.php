@@ -92,7 +92,7 @@ label{
 </div>
 </form>
 <br>
-<input type="button" value="Login Me" onclick="window.location.href='login_p.php'" /> <!-- redirects to principle login page. -->
+<input type="button" value="Login Me" onclick="window.location.href='login_p.php'" /> <!-- redirects to principal login page. -->
 </div>
 </body>
 </html>
