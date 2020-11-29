@@ -79,7 +79,7 @@ hr {
 
   <div class="container signup">
     <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='register_p.php'">Register me</button>.</p>
-	  <!-- redirects to  principle registration page. -->
+	  <!-- redirects to  principal registration page. -->
   </div>
 </form>
 </body>
