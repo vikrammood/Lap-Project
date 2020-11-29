@@ -24,5 +24,6 @@ Watch the project video by clicking at the link:
 
 # How to Run ?
 1.Clone this repo using " $ git clone: https://github.com/vikrammood/Lap-Project " using the command line or directly download the code using the download button on                     the top right corner of the repository.
+
 2.Go to the folder where you have cloned the repository.
 
