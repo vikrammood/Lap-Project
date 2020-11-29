@@ -64,21 +64,22 @@ hr {
 </head>
 <body>
 
-<form method="post" enctype="multipart/form-data" action="sample_p.php" target="_blank">
+<form method="post" enctype="multipart/form-data" action="sample_p.php" target="_blank"> <!-- Opens the sample_p.php in a new tab--> 
   <div class="container">
     <h1>Login</h1>
     <hr>
 	<label for="name"><b>Name</b></label>
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required> 
+    <input type="text" placeholder="Enter Email" name="email" id="email" required> <!-- enter email-->
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required> 
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required> <!-- enter password-->
     <hr>
-    <input type="submit" class="loginbtn" name="save" value="Submit"/>
+    <input type="submit" class="loginbtn" name="save" value="Submit"/> <!-- submit form -->
   </div>
 
   <div class="container signup">
-    <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='register_p.php'">Register me</button>.</p> 
+    <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='register_p.php'">Register me</button>.</p>
+	  <!-- redirects to  principle registration page. -->
   </div>
 </form>
 </body>
