@@ -1,3 +1,4 @@
+//create table admin.
 CREATE TABLE IF NOT EXISTS admindetails 
 (
   id int(11) NOT NULL AUTO_INCREMENT,
