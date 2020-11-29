@@ -36,4 +36,4 @@ Watch the project video by clicking at the link:
 
 2.Admin:login with registered account and upload files.
 
-3.Principle:login with registered account and download files uploaded by admint.
+3.Principle:login with registered account and download files uploaded by admin.
