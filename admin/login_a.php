@@ -64,8 +64,8 @@ hr {
 </head>
 <body>
 
-<form method="post" enctype="multipart/form-data" action="sample_a.php" target="_blank">
-  <div class="container">
+<form method="post" enctype="multipart/form-data" action="sample_a.php" target="_blank"> <!-- Opens the sample_a.php in a new tab-->
+  <div class="container"> 
     <h1>Login</h1>
     <hr>
 	<label for="name"><b>Name</b></label>
@@ -74,11 +74,12 @@ hr {
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required> <!-- enter passwod -->
     <hr>
-    <input type="submit" class="loginbtn" name="save" value="Submit"/>
+    <input type="submit" class="loginbtn" name="save" value="Submit"/> <!-- submit form -->
   </div>
 
   <div class="container signup">
     <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='register.php'">Register me</button>.</p>
+	  <!-- redirects to registration page. -->
   </div>
 </form>
 </body>
