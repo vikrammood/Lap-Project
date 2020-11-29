@@ -47,7 +47,7 @@ email
       echo "</table>";
         }
 } else {
-  echo "0 results";
+  echo "0 results"; // if the entered email  doesn't exists.
 }
 }
 $conn->close();
