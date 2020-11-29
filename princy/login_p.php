@@ -70,7 +70,7 @@ hr {
     <hr>
 	<label for="name"><b>Name</b></label>
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required> 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required> 
     <hr>
@@ -78,7 +78,7 @@ hr {
   </div>
 
   <div class="container signup">
-    <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='register_p.php'">Register me</button>.</p>
+    <p>Don't have an account? <button class="registerbtn" onclick="window.location.href='register_p.php'">Register me</button>.</p> 
   </div>
 </form>
 </body>
