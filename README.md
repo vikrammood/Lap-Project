@@ -32,7 +32,7 @@ Watch the project video by clicking at the link:
 4.Select Student/Admin/Principal, Register by providing necessary details and login.
 
 # How to Use ?
-1. Student:login with registered account and download admit card.
+1.Student:login with registered account and download admit card.
 
 2.Admin:login with registered account and upload files.
 
