@@ -1,6 +1,6 @@
 <?php
 $conn = new mysqli("localhost:3306","root","Keerthi@2001","student");//create connection
-extract($_POST//imports post variables
+extract($_POST);//imports post variables
 if(isset($save))//it checks whether we clicked the submit button or not
 {
 $sql = "SELECT id,name,roll,branch,dob,email FROM studentdetails WHERE email = '$email'"; //selects the specified columns where emial = entered email
