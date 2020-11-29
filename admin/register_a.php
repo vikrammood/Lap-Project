@@ -1,7 +1,7 @@
 <?php
-$conn = new mysqli("localhost:3306","root","Med09","student");
-extract($_POST);
-if(isset($save))
+$conn = new mysqli("localhost:3306","root","Med09","student"); //create connection.
+extract($_POST); //imports post variables
+if(isset($save)) //it checks whether we clicked the submit button or not.
 {
 $dob=$yy."-".$mm."--".$dd;
 $sql = "SELECT * FROM admindetails";
