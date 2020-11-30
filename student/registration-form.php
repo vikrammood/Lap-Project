@@ -7,13 +7,20 @@ if(isset($save)) //it checks whether we clicked the submit button or not.
 $dob=$yy."-".$mm."--".$dd; 
 $sql = "SELECT * FROM studentdetails"; //selecting all rows from studentdetails.
 $count = $conn->query($sql)->num_rows; //counts number of rows in student details
-$sql = "SELECT * FROM studentdetails where email = '$e'"; //selecting the row where email = entered email.
-$result = $conn->query($sql);
-if ($result->num_rows > 0) { //if the entered email already exists.
+$sql1 = "SELECT * FROM studentdetails where email = '$e'"; //selecting the row from student details where email = entered email.
+$result1 = $conn->query($sql1);
+$sql2 = "SELECT * FROM admindetails where email = '$e'"; //selecting the row from admin details where email = entered email.
+$result2 = $conn->query($sql2);
+$sql3 = "SELECT * FROM pdetails where email = '$e'"; //selecting the row from principal details where email = entered email.
+$result3 = $conn->query($sql3);
+if ($result1->num_rows > 0) { //if the entered email already exists.
 $msg = "<font color='red'>".ucfirst($e)."already exists choose another email</font>"; 
 }
-else
+else if($result2->num_rows > 0 or $result3->num_rows > 0) //if user is not an admin or a principal
 {
+$msg = "<font color='red'>You cannot register here</font>";
+}
+else{
 $query="INSERT INTO studentdetails VALUES ($count+1,'$n','$r','$b','$e','$g','$p','$dob',now())"; //inserting the details in specified order.
 
 if ($conn->query($query) === TRUE) { //if details are inserted succesfully 
