@@ -21,20 +21,20 @@ Watch the project video by clicking at the link:
 [Video](https://www.youtube.com/watch?v=cBosgEEA--Y)
 
 ## How to Run ?
-1.Clone this repo using " $ git clone: https://github.com/vikrammood/Lap-Project " using the command line or directly download the code using the download button on                     the top right corner of the repository.
+1. Clone this repo using " $ git clone: https://github.com/vikrammood/Lap-Project " using the command line or directly download the code using the download button on                     the top right corner of the repository.
 
-2.Go to the folder where you have cloned the repository.
+2. Go to the folder where you have cloned the repository.
 
-3.Open front_page.php in browser.
+3. Open front_page.php in browser.
 
-4.Select Student/Admin/Principal, Register by providing necessary details and login.
+4. Select Student/Admin/Principal, Register by providing necessary details and login.
 
 ## How to Use ?
-1.Student:login with registered account and download admit card.
+1. Student:login with registered account and download admit card.
 
-2.Admin:login with registered account and upload files.
+2. Admin:login with registered account and upload files.
 
-3.Principle:login with registered account and download files uploaded by admin.
+3. Principle:login with registered account and download files uploaded by admin.
 
 For more information see [Wiki](https://github.com/vikrammood/Lap-Project/wiki) page.
 
