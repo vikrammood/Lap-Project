@@ -1,18 +1,24 @@
 <?php
-$conn = new mysqli("localhost:3306","root","Med09","student");//create connection.
+$conn = new mysqli("localhost:3306","root","Keerthi@2001","student");//create connection.
 extract($_POST);//imports post variables
 if(isset($save))//it checks whether we clicked the submit button or not.
 {
-
 $sql = "SELECT * FROM pdetails"; //selecting all rows from pdetails
 $count = $conn->query($sql)->num_rows; //counts number of rows in student details
-$sql = "SELECT * FROM pdetails where email = '$e'"; //selecting the row where email = entered email
-$result = $conn->query($sql);
-if ($result->num_rows > 0) { //if the entered email already exists.
+$sql1 = "SELECT * FROM studentdetails where email = '$e'"; //selecting the row from student details where email = entered email.
+$result1 = $conn->query($sql1);
+$sql2 = "SELECT * FROM admindetails where email = '$e'"; //selecting the row from admin details where email = entered email.
+$result2 = $conn->query($sql2);
+$sql3 = "SELECT * FROM pdetails where email = '$e'"; //selecting the row from principal details where email = entered email.
+$result3 = $conn->query($sql3);
+if ($result3->num_rows > 0) { //if the entered email already exists.
 $msg = "<font color='red'>".ucfirst($e)."already exists choose another email</font>";
 }
-else
+else if($result1->num_rows > 0 or $result2->num_rows > 0) //if user is not a student or an admin
 {
+$msg = "<font color='red'>You cannot register here</font>";
+}
+else{
 $query="INSERT INTO pdetails VALUES ($count+1,'$n','$e','$p',now())"; //inserting the details in specified order.
 
 
