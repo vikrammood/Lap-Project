@@ -23,11 +23,17 @@ Watch the project video by clicking at the link:
 ## How to Run ?
 1. Clone this repo using " $ git clone: https://github.com/vikrammood/Lap-Project " using the command line or directly download the code using the download button on                     the top right corner of the repository.
 
-2. Go to the folder where you have cloned the repository.
+2. After downloading the zip file extract the file into opt/lampp/htdocs directory. 
 
-3. Open front_page.php in browser.
+3. Inside that extracted folder create a new folder and name it as "uploads". 
 
-4. Select Student/Admin/Principal, Register by providing necessary details and login.
+4. Give full permissions to that "uploads" folder.
+
+5. Go to terminal start XAMPP.
+
+6. Open front_page.php in browser using http://localhost/Lap-Project-main/front_page.php.
+
+
 
 ## How to Use ?
 1. Student:login with registered account and download admit card.
